@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian's Temperature Converter</title>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Import End -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="head-center">kalkulator konversi suhu</h1>
+      <p class="desc">
+        Masukkan suhu derajat Celcius (&deg;C) ke form dibawah ini, lalu klik
+        tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit
+        (&deg;F).
+      </p>
+      <p class="desc" hidden>
+        Masukkan suhu derajat Fahrenheit (&deg;F) ke form dibawah ini, lalu klik
+        tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celcius
+        (&deg;C).
+      </p>
+    </header>
+
+    <main>
+      <!-- Input Section -->
+      <section class="container">
+        <header>
+          <h4>Celcius(&deg;C):</h4>
+        </header>
+
+        <section>
+          <input type="number" class="box" name="input" id="input" />
+          <button class="btn-side" id="convertButton">Konversi</button>
+          <br />
+          <button class="btn" id="resetButton">Reset</button>
+          <button class="btn" id="reverseButton">Reverse</button>
+        </section>
+      </section>
+
+      <!-- Output Section -->
+      <section>
+        <header>
+          <h4>Fahrenheit(&deg;F):</h4>
+        </header>
+
+        <section>
+          <div class="result-box" id="resultBox"></div>
+        </section>
+      </section>
+
+      <!-- Calculation -->
+      <section>
+        <header>
+          <h4>Cara Kalkulasi:</h4>
+        </header>
+
+        <section>
+          <div class="calculation-box" id="calculationBox"></div>
+        </section>
+
+        <footer>
+          <p>Fahrenheit ke Celcius</p>
+        </footer>
+      </section>
+
+      <!-- Formula -->
+      <section>
+        <header>
+          <h3 class="formula-head">
+            cara konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)
+          </h3>
+        </header>
+        <hr />
+
+        <section>
+          <p>
+            Suhu <b id="S1Value">S</b> dalam derajat
+            <span id="S1Desc">T</span> sama dengan suhu
+            <b id="S2Value">S</b> dalam derajat <span id="S2Desc">T</span>
+            <span id="tempFormulaDesc">F</span><br /><br>
+
+            <span id="FormulaShown">Formula 1</span><br><br>
+            atau <br><br>
+            <span id="FormulaShown2">Formula 2</span>
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer id="copyright">Created by <strong>Novebrian Setya Purwanto</strong></footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
