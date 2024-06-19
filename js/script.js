@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </p>
         <span><sub>atau</sub></span>
         <p>
-          ${celsius.toFixed(1)}<sub>(&deg;C)</sub> = (${value.toFixed(1)}<sub>(&deg;F) </sub> - 32) × 0.5556
+          ${celsius.toFixed(1)}<sub>(&deg;C)</sub> = (${value.toFixed(1)}<sub>(&deg;F) </sub> - 32) × 0.5
         </p>`;
     }
   }
