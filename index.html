@@ -18,15 +18,10 @@
   <body>
     <header>
       <h1 class="head-center">kalkulator konversi suhu</h1>
-      <p class="desc">
+      <p class="desc" id="desc">
         Masukkan suhu derajat Celcius (&deg;C) ke form dibawah ini, lalu klik
         tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit
         (&deg;F).
-      </p>
-      <p class="desc" hidden>
-        Masukkan suhu derajat Fahrenheit (&deg;F) ke form dibawah ini, lalu klik
-        tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celcius
-        (&deg;C).
       </p>
     </header>
 
@@ -68,35 +63,40 @@
         </section>
 
         <footer>
-          <p>Fahrenheit ke Celcius</p>
+          <p id="turn">Fahrenheit ke Celcius</p>
         </footer>
       </section>
 
       <!-- Formula -->
       <section>
         <header>
-          <h3 class="formula-head">
+          <h3 class="formula-head" id="formula-head">
             cara konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)
           </h3>
         </header>
         <hr />
 
-        <section>
+        <section id="formula">
           <p>
-            Suhu <b id="S1Value">S</b> dalam derajat
-            <span id="S1Desc">T</span> sama dengan suhu
-            <b id="S2Value">S</b> dalam derajat <span id="S2Desc">T</span>
-            <span id="tempFormulaDesc">F</span><br /><br>
-
-            <span id="FormulaShown">Formula 1</span><br><br>
-            atau <br><br>
-            <span id="FormulaShown2">Formula 2</span>
+            Suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) sama dengan suhu
+            <i>S</i> dalam derajat Celcius (&deg;C) dikalikan 9/5 ditambah 32.
+          </p>
+          <p>
+            <i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C) </sub>× 9/5) +
+            32
+          </p>
+          <span><sub>atau</sub></span>
+          <p>
+            <i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C) </sub> × 1.8) +
+            32
           </p>
         </section>
       </section>
     </main>
 
-    <footer id="copyright">Created by <strong>Novebrian Setya Purwanto</strong></footer>
+    <footer id="copyright">
+      Created by <strong>Novebrian Setya Purwanto</strong>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
