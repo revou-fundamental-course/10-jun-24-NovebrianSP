@@ -2,6 +2,16 @@ body {
   background-color: #a5bbbb;
   background-size: cover;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #55AD9B;
+}
 
 .head-center {
   text-align: center;
@@ -24,24 +34,27 @@ body {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  background-color: #0ea5e9;
   -webkit-box-shadow: 2px 2px 2px #000000;
   box-shadow: 2px 2px 2px #000000;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background-color: #365314;
-  color: #0ea5e9;
+  background-color: #95D2B3;
+  color: #000000;
 }
 
 .btn-side {
   -webkit-box-shadow: 2px 2px 2px #000000;
   box-shadow: 2px 2px 2px #000000;
+  border-radius: 5px;
+  background-color: #0ea5e9;
 }
 
 .btn-side:hover {
-  background-color: #365314;
-  color: #0ea5e9;
+  background-color: #95D2B3;
+  color: #000000;
 }
 
 .result-box {
@@ -54,6 +67,7 @@ body {
   border-radius: 5px;
   background: #f0f0f0;
   color: #000000;
+  text-align: center;
 }
 
 .calculation-box {
@@ -66,6 +80,7 @@ body {
   border-radius: 5px;
   background: #f0f0f0;
   color: #000000;
+  text-align: center;
 }
 
 .formula-head {
@@ -75,4 +90,5 @@ body {
 
 footer {
   padding-top: 20px;
+  text-align: center;
 }
